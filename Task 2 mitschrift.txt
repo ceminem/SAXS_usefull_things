@@ -1,0 +1,51 @@
+SAXS Task 2 
+
+SDLs will be very imported parameters for analysis (sanity check/fitting with random numbers will give you random solution)
+Estimate SLD
+Micells --> find a way what geometry it is (try different combinations x^2 to look at the fit)
+Task1 pdf like Task2 
+
+Task 2:
+radius of Micell (aspect ratio, geometry, SLD)
+SLD of tail fix (does not change a lot), Head SLD changes more because of Water.
+
+FWScatering: I(q --> 0) = a * n <V**2> <delta SLD**2)
+I(q --> 0) = see picture (practicall tipp. in task 2 we do not care so much about absolut/relativ scale. Dont fix it. do it temporaryly)
+
+For SLD dont count the Salt 
+
+chem spider to look up for example density (if you just have one source). In case of SDS there was no result so we chose Dodecan-1-ide to approximate the SLD of the tail.
+go properties and go down 
+density of the tail ~0.75
+
+Now the same for the head --> sulfate [Ai value 1.8] head is harder because water will contribute to the SLD. It will be between SLD of water and calcuted value of Head.
+
+Open sasview documentation --> model explanation --> surch for the right modle
+
+first try with core shell modle backgroud value 0.008 min 0.007 max 0.009 sds --> sld solvent 9.44; sld shell 50:50 aprox 12 min/max 10-15, sld core 7.1-7.5
+
+radius calculate 12 *1.2 --> put 14 
+thikness must be less so ~5 
+
+add polydispersity (not to teh head so not to thinkness) 
+fixing means unticking the box 
+
+
+redo with core shell ellipsoid
+x_core is the same as e in Vo
+dont change x_polar_change
+theta and phi stay unchanged
+
+deside if prolate or oblate be comparing Rmin and Rmax with your calculated lenght 
+PRolate e> 1 oblate e<1
+
+
+draw your structures 
+core shell sphere/core shell elipsoide (oblate/prolate)
+
+For the vesicle systhems --> core multi shell/lammela_hg
+iii) core shell cylinder (optional for report)
+
+LUV:
+Volume Tail --< 950A
+Volume of head --> 320A 
